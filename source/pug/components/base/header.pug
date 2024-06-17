@@ -7,24 +7,33 @@ mixin header(headerMods, currentUrl)
       },
       {
         href: "#",
-        text: "Страница 2"
+        text: "О\u00a0компании"
       },
       {
         href: "#",
-        text: "Страница 3"
+        text: "Проекты"
+      },
+      {
+        href: "#",
+        text: "Услуги"
+      },
+      {
+        href: "#",
+        text: "Контакты"
       },
     ]
 
   header.header(class=headerMods)
     .container
       if(currentUrl === "index.html")
-        //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo Логотип
+        span.header__logo
+          +picture("content", "logo", "png", 153, 458, "Логотип сайта Бюро Никулина")
       else
-        a.header__logo(href="index.html", aria-label="Переход на главную") Логотип
+        a.header__logo(href="index.html", aria-label="Переход на главную")
+          +picture("content", "logo", "png", 153, 458, "Логотип сайта Бюро Никулина")
       nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
+        button.main-nav__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          +icon("icon_burger", 24, 24)
         .main-nav__wrapper
           ul.main-nav__list
             each link in headerLinks

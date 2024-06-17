@@ -13,13 +13,17 @@
 }
 
 @mixin focus {
-  &.focus-visible:focus {
+  &:focus {
     @content;
   }
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active {
+    @content;
+  }
+
+  &:focus:active {
     @content;
   }
 }
