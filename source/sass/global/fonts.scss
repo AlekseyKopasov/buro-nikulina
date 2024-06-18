@@ -12,12 +12,24 @@
 
 @font-face {
   font-style: normal;
+  font-weight: 400;
+  font-family: "Raleway";
+
+  font-display: swap;
+  src:
+    url("../fonts/Raleway-Regular.woff2") format("ttf"),
+    url("../fonts/Raleway-Regular.woff2") format("woff"),
+    url("../fonts/Raleway-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 600;
   font-family: "Raleway";
 
   font-display: swap;
   src:
-    url("../fonts/Raleway.woff2") format("ttf"),
-    url("../fonts/Raleway.woff2") format("woff"),
-    url("../fonts/Raleway.woff2") format("woff2");
+    url("../fonts/Raleway-Bold.woff2") format("ttf"),
+    url("../fonts/Raleway-Bold.woff2") format("woff"),
+    url("../fonts/Raleway-Bold.woff2") format("woff2");
 }
