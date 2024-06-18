@@ -32,8 +32,6 @@ mixin header(headerMods, currentUrl)
         a.header__logo(href="index.html", aria-label="Переход на главную")
           +picture("content", "logo", "png", 153, 458, "Логотип сайта Бюро Никулина")
       nav.main-nav
-        button.main-nav__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon_burger", 24, 24)
         .main-nav__wrapper
           ul.main-nav__list
             each link in headerLinks

@@ -1,0 +1,51 @@
+.social {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  gap: 24px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    transition: color $trans-default, opacity $trans-default;
+  }
+
+  &__link:hover {
+    &.social__link--tg {
+      color: $color-tory-blue;
+    }
+
+    &.social__link--vk {
+      color: $color-dodger-blue;
+    }
+
+    &.social__link--wa {
+      color: $color-malachite;
+    }
+
+    &.social__link--yt {
+      color: $color-red;
+    }
+  }
+
+  &__link:focus {
+    opacity: 0.6;
+  }
+
+  &__link:focus:hover {
+    opacity: 1;
+  }
+
+  &__link:hover:active {
+    color: $color-default-black;
+  }
+
+  &__icon {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}

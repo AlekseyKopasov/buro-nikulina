@@ -25,11 +25,6 @@
               <source type="image/webp" srcset="img/content/logo.webp, img/content/logo@2x.webp 2x"><img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="153" height="458" alt="Логотип сайта Бюро Никулина">
             </picture></span>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-              <svg width="24" height="24" aria-hidden="true">
-                <use xlink:href="#icon_burger"></use>
-              </svg>
-            </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
@@ -49,7 +44,30 @@
       </header>
       <main></main>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer__wrapper">
+            <ul class="social">
+              <li class="social__item"><a class="social__link social__link--tg" href="#" aria-label="Ссылка на Telegram">
+                  <svg class="social__icon" width="48" height="48" aria-hidden="true">
+                    <use xlink:href="#icon_tg"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Ссылка на vkontakte">
+                  <svg class="social__icon" width="48" height="48" aria-hidden="true">
+                    <use xlink:href="#icon_vk"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--wa" href="#" aria-label="Ссылка на whatsapp">
+                  <svg class="social__icon" width="48" height="48" aria-hidden="true">
+                    <use xlink:href="#icon_wa"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--yt" href="#" aria-label="Ссылка на yuotube">
+                  <svg class="social__icon" width="48" height="48" aria-hidden="true">
+                    <use xlink:href="#icon_yt"></use>
+                  </svg></a></li>
+            </ul>
+            <div class="footer__contacts"><a class="footer__company-link" href="info@company.com" aria-label="Ссылка на Главную страницу сайта">info@company.com</a><a class="footer__phone" href="tel:74951234567">+7 495 123-45-67</a></div>
+            <div class="footer__copy"><span class="footer__copy-year">2022</span><span class="footer__copy-text">&copy; OOO &laquo;Компания&raquo;</span></div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

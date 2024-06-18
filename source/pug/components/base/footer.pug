@@ -1,3 +1,11 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__wrapper
+        +social()
+        .footer__contacts
+          a.footer__company-link(href="info@company.com" aria-label="Ссылка на Главную страницу сайта") info@company.com
+          a.footer__phone(href="tel:74951234567") +7 495 123-45-67
+        .footer__copy
+          span.footer__copy-year 2022
+          span.footer__copy-text &copy; OOO &laquo;Компания&raquo;
