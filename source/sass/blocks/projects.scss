@@ -76,10 +76,26 @@
     line-height: 1.2;
     font-weight: 600;
     color: $color-default-white;
+
+    @include vp-1099 {
+      font-size: 20px;
+    }
+
+    @include vp-679 {
+      font-size: 18px;
+    }
   }
 
   &__item-title--large {
     font-size: 28px;
+
+    @include vp-1099 {
+      font-size: 22px;
+    }
+
+    @include vp-679 {
+      font-size: 20px;
+    }
   }
 
   &__image {

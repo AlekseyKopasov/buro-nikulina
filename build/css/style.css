@@ -779,8 +779,28 @@ button,
   font-weight: 600;
   color: #ffffff;
 }
+@media (max-width: 1099px) {
+  .projects__item-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 679px) {
+  .projects__item-title {
+    font-size: 18px;
+  }
+}
 .projects__item-title--large {
   font-size: 28px;
+}
+@media (max-width: 1099px) {
+  .projects__item-title--large {
+    font-size: 22px;
+  }
+}
+@media (max-width: 679px) {
+  .projects__item-title--large {
+    font-size: 20px;
+  }
 }
 .projects__image {
   position: absolute;
