@@ -25,12 +25,8 @@ mixin header(headerMods, currentUrl)
 
   header.header(class=headerMods)
     .container
-      if(currentUrl === "index.html")
-        span.header__logo
-          +picture("content", "logo", "png", 153, 458, "Логотип сайта Бюро Никулина")
-      else
-        a.header__logo(href="index.html", aria-label="Переход на главную")
-          +picture("content", "logo", "png", 153, 458, "Логотип сайта Бюро Никулина")
+      a.header__logo(href="index.html", aria-label="Переход на главную")
+        +picture("content", "logo", "png", 153, 458, "Логотип сайта Бюро Никулина")
       nav.main-nav
         .main-nav__wrapper
           ul.main-nav__list

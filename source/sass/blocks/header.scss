@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding: 28px 0;
 
   background-color: transparent;
@@ -17,5 +17,15 @@
   &__logo {
     margin-right: auto;
     flex-shrink: 0;
+
+    transition: opacity $trans-default;
+  }
+
+  &__logo:hover {
+    opacity: 0.8;
+  }
+
+  &__logo:active {
+    opacity: 1;
   }
 }
